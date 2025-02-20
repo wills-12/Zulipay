@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - Zulipay</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- (Optional) If you want to enable Tailwind's JS-based features, also add:
+       <script src="https://cdn.tailwindcss.com"></script>
+  -->
+    <script
+      src="https://kit.fontawesome.com/dc26d6c0c8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      /* Example: Simple keyframe fade-in for the main content (applied on page load) */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      
+
+      /* For the mobile menu, we'll transition the max-height for a slide-down effect */
+      .menu-transition {
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col text-gray-700">
+    <!-- HEADER -->
+    <!-- NAVBAR -->
+    <header
+    class="top-0 z-50"
+    style="background-image: url('/public/img/Background\ \(4\).png')"
+  >
+    <div
+      class="max-w-7xl mx-auto px-4 whitespace-nowrap py-3 flex items-center justify-between"
+    >
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="img/Zulipay Logo 1.png" alt="Zulipay Logo" class="w-auto" />
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#" class="font-bold hover:text-blue-600 transition">Home</a>
+        <a
+          href="#features"
+          class="text-gray-600 hover:text-blue-600 transition"
+          >Features</a
+        >
+        <a href="#works" class="text-gray-600 hover:text-blue-600 transition"
+          >How it works</a
+        >
+        <a href="#faqs" class="text-gray-600 hover:text-blue-600 transition"
+          >FAQs</a
+        >
+        <a
+          href="#contact"
+          class="text-gray-600 hover:text-blue-600 transition"
+          >Contact Us</a
+        >
+      </nav>
+
+      <!-- Desktop Buttons -->
+      <div class="hidden md:flex space-x-4">
+        <a
+          href="#"
+          class="px-4 font-semibold py-2 border border-gray-200 text-black rounded-lg hover:bg-blue-50 transition"
+        >
+          Get Started
+        </a>
+        <a
+          href="#"
+          class="px-6 py-2 bg-darkBlue text-white rounded-md hover:bg-lightBlue transition"
+        >
+          Sign In
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobileMenuBtn"
+        class="md:hidden flex items-center justify-center p-2 text-gray-700 hover:text-blue-600 focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <nav
+      id="mobileMenu"
+      class="bg-white border-t border-gray-200 hidden md:hidden"
+    >
+      <div class="px-4 py-8 flex flex-col space-y-4 text-center">
+        <a href="#" class="font-bold hover:text-blue-600 transition">Home</a>
+        <a
+          href="#features"
+          class="text-gray-600 hover:text-blue-600 transition"
+          >Features</a
+        >
+        <a href="#works" class="text-gray-600 hover:text-blue-600 transition"
+          >How it works</a
+        >
+        <a href="#faqs" class="text-gray-600 hover:text-blue-600 transition"
+          >FAQs</a
+        >
+        <a
+          href="#contact"
+          class="text-gray-600 hover:text-blue-600 transition"
+          >Contact</a
+        >
+        <div class="pt-2 mx-auto flex space-x-2 text-center">
+          <a
+            href="#"
+            class="px-4 py-2 font-semibold border border-gray-200 text-black rounded-lg hover:bg-blue-50 transition"
+          >
+            Get Started
+          </a>
+          <a
+            href="#"
+            class="px-6 py-2 bg-darkBlue text-white rounded-md hover:bg-lightBlue transition"
+          >
+            Sign In
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow"
+     style="
+      background-repeat: no-repeat;
+      background-image: url('/public/img/Background\ \(4\).png');
+    ">
+      <div class="max-w-7xl mx-auto px-4 py-8 fade-in"
+     >
+        <!-- Title -->
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">Terms of Service</h1>
+        <p>Welcome to our "Terms of Service" page, where we lay out the legal agreement between you and our platform.</p>
+        <p class="mb-4">It's essential to be informed about your rights and responsibilities while using our services.</p>
+        <p class="font-semibold text-sm">Last update: August 17, 2025</p>
+        
+        <div class="py-8">
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            fermentum, metus nec auctor posuere, velit arcu interdum felis, vel
+            mattis enim elit et ex. Suspendisse quis tristique risus. Aenean
+            malesuada tortor nec tellus semper, in fringilla justo rutrum. Nullam
+            sit amet ipsum ac lorem commodo vulputate.
+          </p>
+        </div>
+        
+        <!-- Terms Text Sections -->
+        <!-- 1) Sed malesuada -->
+        <h2 class="text-2xl font-bold text-blue-600 mt-8 mb-4">Sed malesuada</h2>
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          fermentum, metus nec auctor posuere, velit arcu interdum felis, vel
+          mattis enim elit et ex. Suspendisse quis tristique risus. Aenean
+          malesuada tortor nec tellus semper, in fringilla justo rutrum. Nullam
+          sit amet ipsum ac lorem commodo vulputate.
+        </p>
+        <p class="mb-4">
+          Duis ornare vestibulum quam, in facilisis metus tincidunt at. Maecenas
+          blandit, orci at egestas bibendum, sem ex hendrerit lorem, eget
+          scelerisque neque sapien nec sapien. Suspendisse ac odio mauris.
+          Integer quis urna sed justo malesuada tincidunt. Integer vitae felis
+          nisl.
+        </p>
+        <p class="mb-4">
+          Aenean vehicula, lorem quis hendrerit elementum, nunc nunc bibendum
+          diam, eu maximus sapien diam sed dui. Mauris vehicula nisl at aliquam
+          fermentum. Proin ultricies, lectus non finibus tempus, risus magna
+          convallis velit, ac lacinia mi nulla sit amet elit.
+        </p>
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            fermentum, metus nec auctor posuere, velit arcu interdum felis, vel
+            mattis enim elit et ex. Suspendisse quis tristique risus. Aenean
+            malesuada tortor nec tellus semper, in fringilla justo rutrum. Nullam
+            sit amet ipsum ac lorem commodo vulputate.
+          </p>
+          <p class="mb-4">
+            Duis ornare vestibulum quam, in facilisis metus tincidunt at. Maecenas
+            blandit, orci at egestas bibendum, sem ex hendrerit lorem, eget
+            scelerisque neque sapien nec sapien. Suspendisse ac odio mauris.
+            Integer quis urna sed justo malesuada tincidunt. Integer vitae felis
+            nisl.
+          </p>
+          <p class="mb-4">
+            Aenean vehicula, lorem quis hendrerit elementum, nunc nunc bibendum
+            diam, eu maximus sapien diam sed dui. Mauris vehicula nisl at aliquam
+            fermentum. Proin ultricies, lectus non finibus tempus, risus magna
+            convallis velit, ac lacinia mi nulla sit amet elit.
+          </p>
+
+        <!-- 2) Duis a mel vel justo -->
+        <h2 class="text-2xl font-bold text-blue-600 mt-8 mb-4">Duis a mi vel justo</h2>
+        <p class="mb-4">
+          Sed vel diam bibendum, ultrices velit at, fringilla nulla. Integer
+          efficitur urna eu ornare fermentum. Fusce hendrerit nulla diam, at
+          blandit odio aliquam eget. Phasellus sit amet leo maximus, convallis
+          magna in, aliquam dui. Praesent sit amet ultricies magna. Fusce a
+          finibus arcu.
+        </p>
+        <p class="mb-4">
+          Nam feugiat dui lectus, non porttitor risus malesuada eu. Aenean
+          tincidunt ex at massa sollicitudin, sed imperdiet quam placerat. Proin
+          porta sapien a neque efficitur mollis. Suspendisse sed velit sed justo
+          efficitur varius. Pellentesque habitant morbi tristique senectus et
+          netus et malesuada fames ac turpis egestas.
+        </p>
+        <p class="mb-4">
+          Phasellus eu sapien sed neque fringilla commodo a at tortor. Aliquam
+          pulvinar purus velit, at dapibus magna ultrices a. Proin interdum nunc
+          nisl, ac rutrum erat dignissim vitae. Nunc vel erat magna.
+        </p>
+        <p class="mb-4">
+            Sed vel diam bibendum, ultrices velit at, fringilla nulla. Integer
+            efficitur urna eu ornare fermentum. Fusce hendrerit nulla diam, at
+            blandit odio aliquam eget. Phasellus sit amet leo maximus, convallis
+            magna in, aliquam dui. Praesent sit amet ultricies magna. Fusce a
+            finibus arcu.
+          </p>
+          <p class="mb-4">
+            Nam feugiat dui lectus, non porttitor risus malesuada eu. Aenean
+            tincidunt ex at massa sollicitudin, sed imperdiet quam placerat. Proin
+            porta sapien a neque efficitur mollis. Suspendisse sed velit sed justo
+            efficitur varius. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas.
+          </p>
+          <p class="mb-4">
+            Phasellus eu sapien sed neque fringilla commodo a at tortor. Aliquam
+            pulvinar purus velit, at dapibus magna ultrices a. Proin interdum nunc
+            nisl, ac rutrum erat dignissim vitae. Nunc vel erat magna.
+          </p>
+          <p class="mb-4">
+            Sed vel diam bibendum, ultrices velit at, fringilla nulla. Integer
+            efficitur urna eu ornare fermentum. Fusce hendrerit nulla diam, at
+            blandit odio aliquam eget. Phasellus sit amet leo maximus, convallis
+            magna in, aliquam dui. Praesent sit amet ultricies magna. Fusce a
+            finibus arcu.
+          </p>
+          <p class="mb-4">
+            Nam feugiat dui lectus, non porttitor risus malesuada eu. Aenean
+            tincidunt ex at massa sollicitudin, sed imperdiet quam placerat. Proin
+            porta sapien a neque efficitur mollis. Suspendisse sed velit sed justo
+            efficitur varius. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas.
+          </p>
+          <p class="mb-4">
+            Phasellus eu sapien sed neque fringilla commodo a at tortor. Aliquam
+            pulvinar purus velit, at dapibus magna ultrices a. Proin interdum nunc
+            nisl, ac rutrum erat dignissim vitae. Nunc vel erat magna.
+          </p>
+          <p class="mb-4">
+            Sed vel diam bibendum, ultrices velit at, fringilla nulla. Integer
+            efficitur urna eu ornare fermentum. Fusce hendrerit nulla diam, at
+            blandit odio aliquam eget. Phasellus sit amet leo maximus, convallis
+            magna in, aliquam dui. Praesent sit amet ultricies magna. Fusce a
+            finibus arcu.
+          </p>
+          <p class="mb-4">
+            Nam feugiat dui lectus, non porttitor risus malesuada eu. Aenean
+            tincidunt ex at massa sollicitudin, sed imperdiet quam placerat. Proin
+            porta sapien a neque efficitur mollis. Suspendisse sed velit sed justo
+            efficitur varius. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas.
+          </p>
+          <p class="mb-4">
+            Phasellus eu sapien sed neque fringilla commodo a at tortor. Aliquam
+            pulvinar purus velit, at dapibus magna ultrices a. Proin interdum nunc
+            nisl, ac rutrum erat dignissim vitae. Nunc vel erat magna.
+          </p>
+
+        <!-- 3) Malesuada metus pellentesque-->
+        <h2 class="text-2xl font-bold text-blue-600 mt-8 mb-4">
+          Malesuada metus pellentesque
+        </h2>
+        <p class="mb-4">
+          Vivamus id feugiat neque, vel semper mi. Nam nec nisl at magna mollis
+          vehicula. Morbi aliquam sem at lorem malesuada, sed semper elit
+          commodo. Vivamus et mauris eu enim commodo blandit. Pellentesque
+          lobortis turpis non ligula lacinia sollicitudin. Nulla vitae risus id
+          magna convallis aliquam.
+        </p>
+        <p class="mb-4">
+          Aliquam sed bibendum mi, a pellentesque tortor. Cras a sem sed felis
+          convallis consequat. Cras ac enim ut nulla facilisis convallis ac eget
+          neque. Nullam vitae mauris at orci dictum imperdiet. Pellentesque
+          iaculis metus at risus varius, et pretium purus interdum.
+        </p>
+        <p class="mb-4">
+          Proin fermentum ullamcorper bibendum. Aenean aliquet purus et nulla
+          facilisis iaculis. Suspendisse potenti. Vestibulum vehicula diam vitae
+          cursus lacinia. Curabitur pharetra efficitur fermentum.
+        </p>
+        <p class="mb-4">
+            Vivamus id feugiat neque, vel semper mi. Nam nec nisl at magna mollis
+            vehicula. Morbi aliquam sem at lorem malesuada, sed semper elit
+            commodo. Vivamus et mauris eu enim commodo blandit. Pellentesque
+            lobortis turpis non ligula lacinia sollicitudin. Nulla vitae risus id
+            magna convallis aliquam.
+          </p>
+          <p class="mb-4">
+            Aliquam sed bibendum mi, a pellentesque tortor. Cras a sem sed felis
+            convallis consequat. Cras ac enim ut nulla facilisis convallis ac eget
+            neque. Nullam vitae mauris at orci dictum imperdiet. Pellentesque
+            iaculis metus at risus varius, et pretium purus interdum.
+          </p>
+          <p class="mb-4">
+            Proin fermentum ullamcorper bibendum. Aenean aliquet purus et nulla
+            facilisis iaculis. Suspendisse potenti. Vestibulum vehicula diam vitae
+            cursus lacinia. Curabitur pharetra efficitur fermentum.
+          </p>
+          <p class="mb-4">
+            Vivamus id feugiat neque, vel semper mi. Nam nec nisl at magna mollis
+            vehicula. Morbi aliquam sem at lorem malesuada, sed semper elit
+            commodo. Vivamus et mauris eu enim commodo blandit. Pellentesque
+            lobortis turpis non ligula lacinia sollicitudin. Nulla vitae risus id
+            magna convallis aliquam.
+          </p>
+          <p class="mb-4">
+            Aliquam sed bibendum mi, a pellentesque tortor. Cras a sem sed felis
+            convallis consequat. Cras ac enim ut nulla facilisis convallis ac eget
+            neque. Nullam vitae mauris at orci dictum imperdiet. Pellentesque
+            iaculis metus at risus varius, et pretium purus interdum.
+          </p>
+          <p class="mb-4">
+            Proin fermentum ullamcorper bibendum. Aenean aliquet purus et nulla
+            facilisis iaculis. Suspendisse potenti. Vestibulum vehicula diam vitae
+            cursus lacinia. Curabitur pharetra efficitur fermentum.
+          </p>
+          <p class="mb-4">
+            Vivamus id feugiat neque, vel semper mi. Nam nec nisl at magna mollis
+            vehicula. Morbi aliquam sem at lorem malesuada, sed semper elit
+            commodo. Vivamus et mauris eu enim commodo blandit. Pellentesque
+            lobortis turpis non ligula lacinia sollicitudin. Nulla vitae risus id
+            magna convallis aliquam.
+          </p>
+          <p class="mb-4">
+            Aliquam sed bibendum mi, a pellentesque tortor. Cras a sem sed felis
+            convallis consequat. Cras ac enim ut nulla facilisis convallis ac eget
+            neque. Nullam vitae mauris at orci dictum imperdiet. Pellentesque
+            iaculis metus at risus varius, et pretium purus interdum.
+          </p>
+          <p class="mb-4">
+            Proin fermentum ullamcorper bibendum. Aenean aliquet purus et nulla
+            facilisis iaculis. Suspendisse potenti. Vestibulum vehicula diam vitae
+            cursus lacinia. Curabitur pharetra efficitur fermentum.
+          </p>
+          <p class="mb-4">
+            Vivamus id feugiat neque, vel semper mi. Nam nec nisl at magna mollis
+            vehicula. Morbi aliquam sem at lorem malesuada, sed semper elit
+            commodo. Vivamus et mauris eu enim commodo blandit. Pellentesque
+            lobortis turpis non ligula lacinia sollicitudin. Nulla vitae risus id
+            magna convallis aliquam.
+          </p>
+          <p class="mb-4">
+            Aliquam sed bibendum mi, a pellentesque tortor. Cras a sem sed felis
+            convallis consequat. Cras ac enim ut nulla facilisis convallis ac eget
+            neque. Nullam vitae mauris at orci dictum imperdiet. Pellentesque
+            iaculis metus at risus varius, et pretium purus interdum.
+          </p>
+          <p class="mb-4">
+            Proin fermentum ullamcorper bibendum. Aenean aliquet purus et nulla
+            facilisis iaculis. Suspendisse potenti. Vestibulum vehicula diam vitae
+            cursus lacinia. Curabitur pharetra efficitur fermentum.
+          </p>
+
+       
+        <!-- DOWNLOAD APP SECTION -->
+    <section
+    class="max-w-7xl mx-auto px-4 py-0 md:py-0 text-center js-animate"
+    data-animate="fadeInUp"
+  >
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">Download the App Now!</h2>
+    <p class="text-gray-600 mb-8">
+      Experience seamless access to all our services by downloading the app
+      today.
+    </p>
+
+    <!-- Store Badges (fade in right) -->
+    <div
+      class="flex items-center justify-center space-x-3 js-animate"
+      data-animate="fadeInRight"
+    >
+      <a href="#">
+        <img
+          src="img/Download_on_the_App_Store_Badge.png"
+          alt=""
+          class="w-[170px] h-auto"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="img/Google_Play_Store_badge_EN.png"
+          alt=""
+          class="w-[170px] h-auto"
+        />
+      </a>
+    </div>
+    <!-- Phone Mockup -->
+    <div class="js-animate" data-animate="fadeInLeft">
+      <img src="img/footer.png" alt="App Preview" class="mx-auto" />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-50 py-6">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-0">
+        <!-- Logo & Description -->
+        <div>
+          <img
+            src="img/Zulipay Logo 1.png"
+            alt="Zulipay Logo"
+            class="w-fit mb-4"
+          />
+          <p class="text-gray-600 text-sm mb-8">
+            Zulipay is a mobile payment company. We are building an ecosystem
+            to enable people to digitally send and receive money, and creating
+            simple financial access for everyone.
+          </p>
+          <section class="flex items-center space-x-3">
+            <a href="#"
+              ><img
+                src="img/Download_on_the_App_Store_Badge.png"
+                alt="App Store"
+                class="w-24"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/Google_Play_Store_badge_EN.png"
+                alt="Google Play"
+                class="w-24"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/Continue with your Web Browser.png"
+                alt="Web Browser"
+                class="w-24"
+            /></a>
+          </section>
+        </div>
+
+        <!-- Features -->
+        <div class="mx-0 md:mx-12">
+          <h3 class="font-bold mb-3">Features</h3>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li>
+              <a href="#" class="hover:text-blue-500">Virtual Card</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-500">Money Transfer</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-500">Utility Bills</a>
+            </li>
+            <li><a href="#" class="hover:text-blue-500">Savings</a></li>
+          </ul>
+        </div>
+        <!-- Resources & Legal -->
+        <div>
+          <h3 class="font-bold mb-3">Resources</h3>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li><a href="#" class="hover:text-blue-500">Community</a></li>
+            <li>
+              <a href="#" class="hover:text-blue-500">Join Telegram</a>
+            </li>
+            <li>
+              <a
+                href="terms of service.html"
+                target="_blank"
+                class="hover:text-blue-500"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-500"
+                >Report a Vulnerability</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-3">Legal</h3>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li>
+              <a href="#" class="hover:text-blue-500">End-User Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-500">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-500">Developer Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-500">Terms of Use</a>
+            </li>
+            <li><a href="#" class="hover:text-blue-500">Cookies</a></li>
+            <li><a href="#" class="hover:text-blue-500">Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Info -->
+        <div>
+          <h3 class="font-bold mb-3">Company</h3>
+          <p class="text-gray-600 text-sm">
+            Address: 32, Agbakou Street, Opebi, Ikeja, Lagos.
+          </p>
+          <p class="text-gray-600 text-sm mt-2">Phone: (+234) 813 030 1770</p>
+          <p class="text-gray-600 text-sm mt-2">
+            Mail:
+            <a href="mailto:info@zulipay.com" class="text-blue-500"
+              >info@zulipay.com</a
+            >
+          </p>
+          <p class="text-gray-600 text-sm mt-2">Social Account</p>
+          <div class="flex space-x-4 mt-2">
+            <!-- Social Icons (Placeholder) -->
+            <a href="#"
+              ><i class="fa-brands fa-twitter" style="color: #0d0d0d"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-github" style="color: #0d0d0d"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-facebook" style="color: #0d0d0d"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-instagram" style="color: #0d0d0d"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin" style="color: #0d0d0d"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="mt-4 items-center font-medium pt-4 text-sm">
+        <span class="text-left">Terms of Service</span>
+        <p class="text-right -mt-5">© Copyright - Zulipay 2025</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+       // MOBILE MENU TOGGLE
+       const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
