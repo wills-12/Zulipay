@@ -1026,14 +1026,6 @@ video {
   --tw-bg-opacity: 0.2;
 }
 
-.bg-hero-pattern4 {
-  background-image: url('/public/img/Background (4).png');
-}
-
-.bg-hero-pattern6 {
-  background-image: url('/public/img/Background (6).png');
-}
-
 .bg-cover {
   background-size: cover;
 }
