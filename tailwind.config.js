@@ -19,6 +19,10 @@ module.exports = {
         lightGray: "rgb(179, 184, 190)",
         veryLightGray: "rgb(255, 255, 255)",
       },
+      backgroundImage: {
+        "hero-pattern4": "url('/public/img/Background (4).png')",
+        "hero-pattern6": "url('/public/img/Background (6).png')",
+      },
     },
   },
   plugins: [],
