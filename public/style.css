@@ -1022,6 +1022,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#bbdcf8c9\] {
+  background-color: #bbdcf8c9;
+}
+
+.bg-\[\#bbdcf891\] {
+  background-color: #bbdcf891;
+}
+
+.bg-\[\#bbdcf82c\] {
+  background-color: #bbdcf82c;
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -1261,8 +1273,25 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.brightness-150 {
+  --tw-brightness: brightness(1.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .backdrop-brightness-125 {
   --tw-backdrop-brightness: brightness(1.25);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-brightness-50 {
+  --tw-backdrop-brightness: brightness(.5);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-brightness-150 {
+  --tw-backdrop-brightness: brightness(1.5);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -1334,6 +1363,14 @@ video {
 
   .md\:bottom-16 {
     bottom: 4rem;
+  }
+
+  .md\:-bottom-\[90\%\] {
+    bottom: -90%;
+  }
+
+  .md\:-bottom-\[95\%\] {
+    bottom: -95%;
   }
 
   .md\:-mt-10 {
@@ -1507,6 +1544,18 @@ video {
     bottom: -52px;
   }
 
+  .lg\:-bottom-\[160\%\] {
+    bottom: -160%;
+  }
+
+  .lg\:-bottom-\[90\%\] {
+    bottom: -90%;
+  }
+
+  .lg\:-bottom-\[95\%\] {
+    bottom: -95%;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1528,5 +1577,29 @@ video {
 
   .xl\:-bottom-\[52px\] {
     bottom: -52px;
+  }
+
+  .xl\:-bottom-\[10\%\] {
+    bottom: -10%;
+  }
+
+  .xl\:-bottom-\[60\%\] {
+    bottom: -60%;
+  }
+
+  .xl\:-bottom-\[30\%\] {
+    bottom: -30%;
+  }
+
+  .xl\:-bottom-\[40\%\] {
+    bottom: -40%;
+  }
+
+  .xl\:-bottom-\[90\%\] {
+    bottom: -90%;
+  }
+
+  .xl\:-bottom-\[95\%\] {
+    bottom: -95%;
   }
 }
