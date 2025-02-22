@@ -106,7 +106,7 @@
   </head>
   <body class="bg-white text-gray-800 font-inter overflow-x-hidden">
     <section
-      class="bg-cover bg-center bg-no-repeat"
+      class="bg-cover bg-center bg-no-repeat backdrop-brightness-125"
       id="home"
       style="background-image: url('/public/img/Background\ \(4\).png')"
     >
@@ -126,7 +126,7 @@
 
           <!-- Desktop Menu -->
           <nav class="hidden md:flex items-center space-x-8">
-            <a href="#" class="font-bold text-sm transition">Home</a>
+            <a href="#home" class="font-bold text-sm transition">Home</a>
             <a
               href="#features"
               class="text-gray-600 text-sm hover:text-blue-600 transition"
@@ -193,9 +193,7 @@
           class="bg-white border-t border-gray-200 hidden md:hidden"
         >
           <div class="px-4 py-10 flex flex-col space-y-4 text-center">
-            <a href="#" class="font-bold hover:text-blue-600 transition"
-              >Home</a
-            >
+            <a href="#home" class="font-bold transition">Home</a>
             <a
               href="#features"
               class="text-gray-600 hover:text-blue-600 transition"
@@ -234,7 +232,7 @@
 
       <!-- HERO SECTION -->
 
-      <div class="container mx-auto px-4 py-0">
+      <div class="container mx-auto px-4 py-0" id="home">
         <section class="max-w-7xl mx-auto px-4 py-10 md:py-2">
           <div class="flex flex-col md:flex-row items-center">
             <!-- Text Content (fade in left) -->
@@ -243,18 +241,18 @@
               data-animate="fadeInLeft"
             >
               <div
-                class="bg-blue-50 md:px-1.5 whitespace-nowrap rounded-full py-2 md:py-1.5 px-2 inline-block text-sm space-x-1 mb-2 cursor-pointer"
+                class="bg-[#ffffff] md:px-1.5 whitespace-nowrap rounded-full py-2 md:py-1.5 px-2 inline-block text-sm space-x-1 mb-2 cursor-pointer"
               >
                 <span
-                  class="text-blue-500 text-xs rounded-full md:text-xs bg-blue-300 bg-opacity-20 font-medium px-2 py-1"
+                  class="text-[#005AAD] text-xs rounded-full md:text-xs bg-[#bbdcf8] bg-opacity-20 font-medium px-2 py-1"
                   >New!</span
                 >
-                <span class="font-medium text-xs text-blue-500"
+                <span class="font-medium text-xs text-[#005AAD]"
                   >Zulipay: Secure & Seamless Financial Solutions</span
                 >
                 <i
                   class="fa-solid fa-greater-than text-xs"
-                  style="color: #3a73db"
+                  style="color: #1669b4"
                 ></i>
               </div>
 
@@ -337,7 +335,7 @@
     </section>
 
     <!-- FEATURES SECTION -->
-    <div class="bg-gray-50 py-10" id="features">
+    <div class="bg-[#FBFBFB] py-10" id="features">
       <div class="container mx-auto px-6 py-4">
         <div class="js-animate" data-animate="fadeInUp">
           <h2 class="text-2xl md:text-3xl font-bold mb-4">
@@ -465,86 +463,104 @@
       </div>
     </div>
 
-    <!-- How it works-->
+    <!-- How it works -->
     <section
-      class="bg-cover bg-center bg-no-repeat"
+      class="py-16 bg-cover bg-center bg-no-repeat"
       id="works"
       style="background-image: url('/public/img/Background\ \(6\).png')"
     >
       <div
-        class="max-w-7xl mx-auto px-4 py-10 md:py-12 flex flex-col md:flex-row items-center"
+        class="max-w-7xl mx-auto px-10 md:px-30 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
       >
+        <!-- Left Side: Heading + Image -->
         <div
-          class="w-full md:w-1/2 mb-8 md:mb-0 js-animate"
+          class="relative flex flex-col space-y-2 js-animate"
           data-animate="fadeInLeft"
         >
-          <h2 class="text-2xl md:text-3xl font-bold mb-3 text-left">
-            Simple Steps to Get Started
-          </h2>
+          <!-- Heading Text -->
+          <div class="pt-0">
+            <h2 class="text-3xl md:text-3xl font-bold w-full md:w-7/12">
+              Simple Steps to Get Started
+            </h2>
+          </div>
 
           <img
             src="img/Image (2).png"
             alt="Virtual Card"
-            class="max-w-sm mx-auto"
+            class="w-9/12 h-auto"
           />
-          <div class="ml-10 top-8 left-28 hidden md:block relative">
+          <div class="ml-2 top-8 left-0 hidden md:block relative">
             <img
-              class="w-44 absolute -bottom-2 md:bottom-16 -z-10"
+              class="w-5/12 absolute -bottom-2 md:bottom-16 -z-10"
               src="img/Ellipse 1 (3).png"
               alt=""
             />
             <img
-              class="w-44 absolute -bottom-24 md:-bottom-6 -z-10"
+              class="w-5/12 absolute -bottom-24 md:-bottom-[52px] -z-10"
               src="img/Ellipse 1 (4).png"
               alt=""
             />
           </div>
         </div>
+
+        <!-- Right Side: Text & Steps -->
         <div
-          class="w-full md:w-1/2 md:pl-8 text-center md:text-left js-animate"
+          class="space-y-4 ml-0 md:ml-16 js-animate"
           data-animate="fadeInRight"
         >
-          <ul class="list-inside text-left mx-auto md:mx-0 max-w-md mb-3">
-            <li class="border-solid border-l-2 p-4 border-blue-600">
-              <img class="w-10 pb-2" src="img/Frame 1171276109.png" alt="" />
-              <h3 class="font-semibold pb-2 text-blue-600">
-                Download the Zulipay App
-              </h3>
-              <p class="text-sm text-gray-600">
-                Visit your app store, search for "<span
-                  class="font-semibold text-black"
-                  >Zulipay</span
-                >" and download the app to your mobile device.
-              </p>
-            </li>
+          <!-- Steps -->
+          <div class="mt-2 space-y-4">
+            <!-- Step 1 -->
+            <div class="flex items-start space-x-6 ml-0">
+              <div class="border-solid border-l-2 p-4 border-blue-600">
+                <img class="w-10 pb-2" src="img/Frame 1171276109.png" alt="" />
+                <h3 class="font-semibold text-lg text-blue-500 mb-2">
+                  Download the Zulipay App
+                </h3>
+                <p class="text-gray-600 text-sm w-full md:w-10/12">
+                  Visit your app store, search for <strong>"Zulipay"</strong>,
+                  and download the app to your mobile device.
+                </p>
+              </div>
+            </div>
 
-            <li class="p-4">
-              <img
-                class="w-10 pb-2"
-                src="img/Frame 1171276109 (1).png"
-                alt=""
-              />
-              <h3 class="font-bold pb-2">Quick and Easy Registration</h3>
-              <p class="text-sm text-gray-600">
-                Open the app and complete the simple sign-up process. All you
-                need is your basic personal information.
-              </p>
-            </li>
+            <!-- Step 2 -->
+            <div class="flex items-start space-x-6">
+              <div class="ml-6">
+                <img
+                  class="w-10 pb-2"
+                  src="img/Frame 1171276109 (1).png"
+                  alt=""
+                />
+                <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                  Quick and Easy Registration
+                </h3>
+                <p class="text-gray-600 text-sm w-full md:w-10/12">
+                  Open the app and complete the simple sign-up process. All you
+                  need is your basic personal information.
+                </p>
+              </div>
+            </div>
 
-            <li class="p-4">
-              <img
-                class="w-10 pb-2"
-                src="img/Frame 1171276109 (2).png"
-                alt=""
-              />
-              <h3 class="font-bold pb-2">Fund Your Wallet and Start Paying</h3>
-              <p class="text-sm text-gray-600">
-                Once you're signed in, add funds to your Zulipay wallet and
-                begin making seamless payments for services like airtime, bills,
-                and more.
-              </p>
-            </li>
-          </ul>
+            <!-- Step 3 -->
+            <div class="flex items-start space-x-6">
+              <div class="ml-6">
+                <img
+                  class="w-10 pb-2"
+                  src="img/Frame 1171276109 (2).png"
+                  alt=""
+                />
+                <h3 class="font-semibold text-lg text-gray-900 mb-2">
+                  Fund Your Wallet and Start Paying
+                </h3>
+                <p class="text-gray-600 text-sm w-full md:w-10/12">
+                  Once you're signed in, add funds to your Zulipay wallet and
+                  begin making seamless payments for services like airtime,
+                  bills, and more.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -684,7 +700,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-50 py-6">
+    <footer class="bg-[#FAFAFA] py-6">
       <div
         class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-between"
       >
