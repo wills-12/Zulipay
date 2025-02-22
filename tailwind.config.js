@@ -9,6 +9,10 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        custom: ["Custom", "sans-serif"],
+      },
       colors: {
         darkBlue: "rgb(52, 114, 172)",
         lightBlue: "rgb(105, 159, 209)",
