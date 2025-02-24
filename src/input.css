@@ -7,11 +7,8 @@
 html,
 body {
   scroll-behavior: smooth;
-}
-
-body,
-html {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .background {
