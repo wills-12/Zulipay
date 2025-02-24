@@ -18,11 +18,7 @@ body {
 .background-1 {
   background-image: url("img/Background\ \(6\).png");
 }
-/*
-@font-face {
-  font-family: "Inter";
-  src: url("fonts/Inter-Regular.woff2") format("woff2");
-}*/
+
 /* 
   1. Base state for .js-animate elements
      - Keep them invisible/translated until triggered
